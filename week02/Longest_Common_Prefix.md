@@ -1,4 +1,4 @@
-#### Problem 4: Longest Common Prefix (Easy)
+#### Problem 3: Longest Common Prefix (Easy)
 ___
 
 ###### Solution
