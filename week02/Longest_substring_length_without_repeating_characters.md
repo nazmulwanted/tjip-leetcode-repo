@@ -1,4 +1,4 @@
-#### Problem 1: Longest substring without repeating characters (Easy)
+#### Problem 1: Longest substring without repeating characters (Medium)
 ___
 
 ###### Solution
