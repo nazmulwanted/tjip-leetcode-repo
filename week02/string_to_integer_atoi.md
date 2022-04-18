@@ -4,6 +4,9 @@ ___
 ###### Solution
 
 ```c++
+// Time complexity: O(N), where N is given string length.
+// Space complexity: O(1)
+
 int myAtoi(string s) {
         bool isThereNumber = false;
         bool isNumberStarted = false;
