@@ -30,7 +30,10 @@ int myAtoi(string s) {
             }
             else {
                  if(isNumberStarted) break;
-                 else if(!isNumberStarted && ((s[i] >= 'a' && s[i] <= 'z') || (s[0] >= 'A' && s[0] <= 'Z') || s[0] == '.')) return 0;  
+                 else if(!isNumberStarted && 
+                     ((s[i] >= 'a' && s[i] <= 'z') || 
+                     (s[0] >= 'A' && s[0] <= 'Z') || 
+                     s[0] == '.')) return 0;  
             }
         }
         
@@ -38,13 +41,14 @@ int myAtoi(string s) {
             string numStr = s.substr(i - numberLength, numberLength);
             int result = 0;
             for(int j = 0; j < numberLength; j++){
-                if(result > INT_MAX / 10 || (result == INT_MAX / 10 && numStr[j] - '0' > 7)) return isNegative? INT_MIN : INT_MAX;
+                if(result > INT_MAX / 10 || 
+                    (result == INT_MAX / 10 && numStr[j] - '0' > 7)) {
+                    return isNegative? INT_MIN : INT_MAX;
+                }
                 result = (result * 10) + (numStr[j] - '0');
             }
             return isNegative? -1 * result : result;
         }
-        else {
-            return 0;
-        }
+        else return 0;
 }
 ```
