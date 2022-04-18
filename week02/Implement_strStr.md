@@ -4,8 +4,8 @@ ___
 ##### Solution
 
 ```c++
-Time Complexity: O(N) where N is the length of haystack string.
-Space Complexity: O(1)
+//Time Complexity: O(N) where N is the length of haystack string.
+//Space Complexity: O(1)
 
 int strStr(string haystack, string needle){
     if(needle == "") return 0;
