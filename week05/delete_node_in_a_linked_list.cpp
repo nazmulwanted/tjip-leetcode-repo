@@ -3,6 +3,6 @@
 
 void deleteNode(ListNode* node){
     ListNode* nextNode = node->next;
-    *(node) = *(node->next); // replacing value stored at node with value stored at next->next.
+    *(node) = *(node->next); // replacing value stored at node with value stored at node->next.
     delete nextNode; 
 }
