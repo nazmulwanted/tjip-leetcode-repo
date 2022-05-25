@@ -1,3 +1,4 @@
+// Time complexity: O(N * M) * O(4 * 3 ^ (length of word)), N = number of rows, M = number of columns.
 class trieNode{
 public:
     string word;
