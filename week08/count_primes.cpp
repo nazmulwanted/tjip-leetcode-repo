@@ -1,4 +1,4 @@
-// Time complexity: O(N * log(log(N)) , N = Given integer number.
+// Time complexity: O(square_root(N) * log(log(N)) , N = Given integer number.
 // Space complexity: O(N)
 
 int sieve(int n){
